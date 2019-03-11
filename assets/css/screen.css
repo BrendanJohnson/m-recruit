@@ -6,9 +6,13 @@ License: https://www.wowthemes.net/freebies-license/
  .mainheading {
      padding:1rem 0rem;
 }
+body {
+    padding-top: 50px;
+}
  a {
      color:#00ab6b;
      transition:all 0.2s;
+}
 }
  a:hover {
      color: #038252;
@@ -41,7 +45,6 @@ License: https://www.wowthemes.net/freebies-license/
  .site-content {
      min-height: 60vh;
      padding-top: 1.5rem;
-     margin-top: 57px;
      transition: all 0.4s;
 }
  section {

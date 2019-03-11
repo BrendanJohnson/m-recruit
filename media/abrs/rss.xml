@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>abrs.net.au RSS</title>
+        <link>https://abrs.net.au</link>
+        <description>abrs.net.au</description>
+        <language>en</language>
+        <copyright>Copyright 2018 neap pty ltd</copyright>
+        <lastBuildDate>Tue Nov 27 2018 02:32:06 GMT+0000 (UTC)</lastBuildDate>
+        <generator>Neap RSS generator</generator>
+        <managingEditor>info@neap.co</managingEditor>
+        <webMaster>info@neap.co</webMaster>
+        <image>
+            <title>abrs</title>
+            <url></url>
+            <link>https://abrs.net.au</link>
+            <description>abrs website logo</description>
+        </image>
+        <totatItems>25</totatItems>
+        <refinelist>
+            <classification>
+                <item>
+                    <label>Administration</label>
+                    <count>3</count>
+                    <id>725609</id>
+                </item>
+                <item>
+                    <label>Advocacy &amp; Campaigns</label>
+                    <count>0</count>
+                    <id>725610</id>
+                </item>
+                <item>
+                    <label>Aged Care &amp; Seniors’ Rights</label>
+                    <count>2</count>
+                    <id>725611</id>
+                </item>
+                <item>
+                    <label>Alcohol &amp; Other Drugs</label>
+                    <count>0</count>
+                    <id>725612</id>
+                </item>
+                <item>
+                    <label>Animal Welfare &amp; Protection</label>
+                    <count>0</count>
+                    <id>725613</id>
+                </item>
+                <item>
+                    <label>Business Development &amp; Sales</label>
+                    <count>0</count>
+                    <id>725614</id>
+                </item>
+                <item>
+                    <label>Care &amp; Support Work</label>
+                    <count>6</count>
+                    <id>725615</id>
+                </item>
+                <item>
+                    <label>Co-ops &amp; Credit Unions</label>
+                    <count>0</count>
+                    <id>725616</id>
+                </item>
+                <item>
+                    <label>Communications &amp; Marketing</label>
+                    <count>0</count>
+                    <id>725617</id>
+                </item>
+                <item>
+                    <label>Community Development</label>
+                    <count>0</count>
+                    <id>725618</id>
+                </item>
+                <item>
+                    <label>Conservation &amp; Land Management</label>
+                    <count>0</count>
+                    <id>725619</id>
+                </item>
+                <item>
+                    <label>Corporate Social Responsibility</label>
+                    <count>0</count>
+                    <id>725620</id>
+                </item>
+                <item>
+                    <label>Disability Services</label>
+                    <count>1</count>
+                    <id>725621</id>
+                </item>
+                <item>
+                    <label>Early Childhood</label>
+                    <count>0</count>
+                    <id>725622</id>
+                </item>
+                <item>
+                    <label>Eco-Tourism</label>
+                    <count>0</count>
+                    <id>725623</id>
+                </item>
+                <item>
+                    <label>Education &amp; Training</label>
+                    <count>0</count>
+                    <id>725624</id>
+                </item>
+                <item>
+                    <label>Environment &amp; Sustainability</label>
+                    <count>0</count>
+                    <id>725625</id>
+                </item>
+                <item>
+                    <label>Executive &amp; Senior Management</label>
+                    <count>0</count>
+                    <id>725626</id>
+                </item>
+                <item>
+                    <label>Family Services</label>
+                    <count>0</count>
+                    <id>725627</id>
+                </item>
+                <item>
+                    <label>FairTrade &amp; Organic</label>
+                    <count>0</count>
+                    <id>725628</id>
+                </item>
+                <item>
+                    <label>Finance &amp; Accounting</label>
+                    <count>0</count>
+                    <id>725629</id>
+                </item>
+                <item>
+                    <label>Fundraising</label>
+                    <count>0</count>
+                    <id>725630</id>
+                </item>
+                <item>
+                    <label>GLBTI &amp; Sexual Health</label>
+                    <count>0</count>
+                    <id>725631</id>
+                </item>
+                <item>
+                    <label>Green Architecture/Property</label>
+                    <count>0</count>
+                    <id>725632</id>
+                </item>
+                <item>
+                    <label>Green Energy</label>
+                    <count>0</count>
+                    <id>725633</id>
+                </item>
+                <item>
+                    <label>Green Products &amp; Services</label>
+                    <count>0</count>
+                    <id>725634</id>
+                </item>
+                <item>
+                    <label>Health Care &amp; Allied Health</label>
+                    <count>0</count>
+                    <id>725635</id>
+                </item>
+                <item>
+                    <label>Health Promotion</label>
+                    <count>1</count>
+                    <id>725636</id>
+                </item>
+                <item>
+                    <label>Housing &amp; Homelessness</label>
+                    <count>0</count>
+                    <id>725637</id>
+                </item>
+                <item>
+                    <label>Retail &amp; Hospitality</label>
+                    <count>0</count>
+                    <id>725638</id>
+                </item>
+                <item>
+                    <label>HR &amp; Employment Services</label>
+                    <count>1</count>
+                    <id>725639</id>
+                </item>
+                <item>
+                    <label>Indigenous</label>
+                    <count>0</count>
+                    <id>725640</id>
+                </item>
+                <item>
+                    <label>International Aid &amp; Development</label>
+                    <count>0</count>
+                    <id>725641</id>
+                </item>
+                <item>
+                    <label>I.T. &amp; Communication Technology</label>
+                    <count>1</count>
+                    <id>725642</id>
+                </item>
+                <item>
+                    <label>Legal &amp; Human Rights</label>
+                    <count>0</count>
+                    <id>725643</id>
+                </item>
+                <item>
+                    <label>Management</label>
+                    <count>1</count>
+                    <id>725644</id>
+                </item>
+                <item>
+                    <label>Media &amp; Arts</label>
+                    <count>0</count>
+                    <id>725645</id>
+                </item>
+                <item>
+                    <label>Medical Research</label>
+                    <count>0</count>
+                    <id>725646</id>
+                </item>
+                <item>
+                    <label>Mental Health &amp; Counselling</label>
+                    <count>0</count>
+                    <id>725647</id>
+                </item>
+                <item>
+                    <label>Multiculturalism &amp; Diversity</label>
+                    <count>0</count>
+                    <id>725648</id>
+                </item>
+                <item>
+                    <label>Nursing</label>
+                    <count>0</count>
+                    <id>725649</id>
+                </item>
+                <item>
+                    <label>Operations &amp; Risk Management</label>
+                    <count>0</count>
+                    <id>725650</id>
+                </item>
+                <item>
+                    <label>Organic Farming &amp; Gardening</label>
+                    <count>0</count>
+                    <id>725651</id>
+                </item>
+                <item>
+                    <label>Policy &amp; Research</label>
+                    <count>0</count>
+                    <id>725652</id>
+                </item>
+                <item>
+                    <label>Project Management</label>
+                    <count>0</count>
+                    <id>725653</id>
+                </item>
+                <item>
+                    <label>Recycling &amp; Waste Management</label>
+                    <count>0</count>
+                    <id>725654</id>
+                </item>
+                <item>
+                    <label>Social Work</label>
+                    <count>9</count>
+                    <id>725655</id>
+                </item>
+                <item>
+                    <label>Sustainable Transport</label>
+                    <count>0</count>
+                    <id>725656</id>
+                </item>
+                <item>
+                    <label>Trades &amp; Services</label>
+                    <count>0</count>
+                    <id>725657</id>
+                </item>
+                <item>
+                    <label>Unions &amp; Workers Rights</label>
+                    <count>0</count>
+                    <id>725658</id>
+                </item>
+                <item>
+                    <label>Volunteer Management</label>
+                    <count>0</count>
+                    <id>725659</id>
+                </item>
+                <item>
+                    <label>Women&apos;s Organisations &amp; Services</label>
+                    <count>1</count>
+                    <id>725660</id>
+                </item>
+                <item>
+                    <label>Youth</label>
+                    <count>1</count>
+                    <id>725661</id>
+                </item>
+            </classification>
+            <location>
+                <item>
+                    <label>Adelaide</label>
+                    <count>0</count>
+                    <id>725542</id>
+                </item>
+                <item>
+                    <label>Australia-Wide</label>
+                    <count>0</count>
+                    <id>725548</id>
+                </item>
+                <item>
+                    <label>Brisbane &amp; Gold Coast</label>
+                    <count>0</count>
+                    <id>725538</id>
+                </item>
+                <item>
+                    <label>Canberra &amp; ACT</label>
+                    <count>4</count>
+                    <id>725547</id>
+                </item>
+                <item>
+                    <label>Darwin</label>
+                    <count>0</count>
+                    <id>725545</id>
+                </item>
+                <item>
+                    <label>Hobart</label>
+                    <count>0</count>
+                    <id>725543</id>
+                </item>
+                <item>
+                    <label>International</label>
+                    <count>0</count>
+                    <id>725549</id>
+                </item>
+                <item>
+                    <label>Melbourne</label>
+                    <count>0</count>
+                    <id>725534</id>
+                </item>
+                <item>
+                    <label>Perth</label>
+                    <count>0</count>
+                    <id>725540</id>
+                </item>
+                <item>
+                    <label>Regional NSW</label>
+                    <count>3</count>
+                    <id>725537</id>
+                </item>
+                <item>
+                    <label>Regional NT</label>
+                    <count>0</count>
+                    <id>725546</id>
+                </item>
+                <item>
+                    <label>Regional QLD</label>
+                    <count>0</count>
+                    <id>725539</id>
+                </item>
+                <item>
+                    <label>Regional TAS</label>
+                    <count>0</count>
+                    <id>725544</id>
+                </item>
+                <item>
+                    <label>Regional VIC</label>
+                    <count>0</count>
+                    <id>725535</id>
+                </item>
+                <item>
+                    <label>Regional WA</label>
+                    <count>0</count>
+                    <id>725541</id>
+                </item>
+                <item>
+                    <label>Sydney</label>
+                    <count>18</count>
+                    <id>725536</id>
+                </item>
+                <item>
+                    <label>Regional SA</label>
+                    <count>0</count>
+                    <id>812319</id>
+                </item>
+            </location>
+            <worktype>
+                <item>
+                    <label>Full Time</label>
+                    <count>18</count>
+                    <id>725550</id>
+                </item>
+                <item>
+                    <label>Part Time</label>
+                    <count>1</count>
+                    <id>725551</id>
+                </item>
+                <item>
+                    <label>Contract</label>
+                    <count>6</count>
+                    <id>725552</id>
+                </item>
+                <item>
+                    <label>Casual</label>
+                    <count>0</count>
+                    <id>725553</id>
+                </item>
+                <item>
+                    <label>Graduate</label>
+                    <count>0</count>
+                    <id>725554</id>
+                </item>
+                <item>
+                    <label>Volunteer</label>
+                    <count>0</count>
+                    <id>725555</id>
+                </item>
+            </worktype>
+        </refinelist>
+        <item>
+            <title>Senior Practitioner (Case Management)</title>
+            <description>Use your skills to provide guidance to Case Managers on complex case matters, ensuring safety &amp; permanency are at the center of planning &amp; direction</description>
+            <link>https://abrs.net.au/category/senior-practitioner-case-management-/805909</link>
+            <author>abrs</author>
+            <category>
+                <location>
+                    <value>Sydney</value>
+                </location>
+                <classification>
+                    <value>HR Recruiter</value>
+                    <value>HR Contract</value>
+                </classification>
+            </category>
+            <pubDate>26/11/2018</pubDate>
+            <imageUrl></imageUrl>
+            <salaryLowerBand></salaryLowerBand>
+            <salaryUpperBand></salaryUpperBand>
+        </item>
+        <item>
+            <title>Occupational Therapist</title>
+            <description>Our client, located in the inner west, is looking for an experienced Occupational Therapist to join their culturally diverse team</description>
+            <link>https://abrs.net.au/category/occupational-therapist/805124</link>
+            <author>abrs</author>
+            <category>
+                <location>
+                    <value>Sydney</value>
+                </location>
+                <classification>
+                    <value>HR Recruiter</value>
+                    <value>HR Contract</value>
+                </classification>
+            </category>
+            <pubDate>23/11/2018</pubDate>
+            <imageUrl></imageUrl>
+            <salaryLowerBand></salaryLowerBand>
+            <salaryUpperBand></salaryUpperBand>
+        </item>
+        <item>
+            <title>Events Project Coordinator</title>
+            <description>Are you a confident person with strong organisational skills, with a background in Event Promotion and Projects.&lt;div class=&#39;xmlLocation&#39;&gt;&lt;span class=&#39;xmlBoldTitle&#39;&gt;&lt;strong&gt;Sydney&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;</description>
+            <link>https://www.abrs.net.au/other-jobs/events-project-coordinator/2160471</link>
+            <author>abrs</author>
+            <category>Other</category>
+            <pubDate>06/11/2018</pubDate>
+            <imageUrl></imageUrl>
+            <salaryLowerBand>41171</salaryLowerBand>
+            <salaryUpperBand>62000</salaryUpperBand>
+        </item>
+    </channel>
+</rss>
