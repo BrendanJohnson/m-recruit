@@ -173,7 +173,7 @@
     max-width:100%!important;
     padding:0;
     margin:0;
-}
+    }
 
 /*==== Pagination ====*/
 .strapslide-pagination ul,
@@ -224,6 +224,7 @@ border-radius:1em;
     background: rgba(255, 255, 255, 0.87);
     padding: 18px 20px 10px;
     border-radius: 4px;
+    margin-left: 30px;
 }
 
 /* Modify this for slide */
