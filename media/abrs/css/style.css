@@ -552,7 +552,13 @@ color: #333;
 
 /* Addtional */
 .in-section .h-about .col-sm-6 {padding-bottom:1em; padding-top:1em;}
-.navigation {border-radius: 6px;background: #098cc9;border: none;color: #fff;width: 100%;padding: 10px; display:none;}
+.navigation {
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+
+  padding: 10px;
+  display:none;}
 @media (max-width: 767px) {
 .meet-team .staff-holder	{padding:20px;}
 .navigation {display:block;}

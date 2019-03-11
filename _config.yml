@@ -1,8 +1,8 @@
 # Site
 name: "M Recruit"
 title: "M Recruit"
-description: "Jekyll Template for Blogging"
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+description: "Simple Recruitment Webnsite"
+meta_description: "Simple Recruitment Webnsite"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 google_analytics: 'UA-999999-9'
@@ -15,12 +15,12 @@ permalink: /:title/
 authors:
   sal:
     name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
+    display_name: Stacey
+    gravatar: e1b5b1a3c2c391c4e47c6e542122802f
+    email: brendangjohnson@gmail.com
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    description: "The coolest cat recruiter in all of Sydney. You are currently browsing the Neap demo."
   john:
     name: John
     display_name: John
@@ -28,7 +28,7 @@ authors:
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    description: "This is just a test. Write a short description of the author here."
 
 # Plugins
 plugins: 
