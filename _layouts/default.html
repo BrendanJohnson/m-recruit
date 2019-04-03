@@ -65,7 +65,7 @@ ga('send', 'pageview');
                          <a class='nav-link' href='/'>Home</a>
                     </li>
                     <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/about-us'>About Us (AU)</a>
+                        <a class='nav-link' href='/about-us'>About Us</a>
                     </li>
                     <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
                         <a class='nav-link' href='/clients'>Clients</a>
@@ -78,6 +78,26 @@ ga('send', 'pageview');
                     </li>
                     <li {% if page.topmenu == 'news'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
                         <a class='nav-link' href='/news'>News</a>
+                    </li>
+                {% endif %}
+                {% if page.region == 'fr' %}                   
+                    <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
+                         <a class='nav-link' href='/'>Accueil</a>
+                    </li>
+                    <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
+                        <a class='nav-link' href='/about-us'>A propos</a>
+                    </li>
+                    <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
+                        <a class='nav-link' href='/clients'>Entreprise</a>
+                    </li>
+                    <li {% if page.topmenu == 'candidates'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                        <a class='nav-link' href='/submit-resume'>Candidat</a>
+                    </li>
+                    <li {% if page.topmenu == 'contact'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                        <a class='nav-link' href='/contact'>Contact</a>
+                    </li>
+                    <li {% if page.topmenu == 'news'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                        <a class='nav-link' href='/news'>Actualités</a>
                     </li>
                 {% endif %}
                 {% if page.region == 'uk' %}                   
@@ -100,7 +120,76 @@ ga('send', 'pageview');
                         <a class='nav-link' href='/news'>News</a>
                     </li>
                 {% endif %}
-                {% include search-lunr.html %}
+                <div class="btn-group" style="margin-left: 20px">
+                    <button class="btn btn-default language">
+                        {% if page.region == 'au' %}
+                            <img class="flag-au img-thumbnail icon-medium">&nbsp;&nbsp;
+                            <span id="lanBtnSel">Australia</span>
+                        {% endif %}
+                        {% if page.region == 'uk' %}
+                            <img class="flag-uk img-thumbnail icon-medium">&nbsp;&nbsp;
+                            <span id="lanBtnSel">United Kingdom</span>
+                        {% endif %}
+                        {% if page.region == 'fr' %}
+                            <img class="flag-fr img-thumbnail icon-medium">&nbsp;&nbsp;
+                            <span id="lanBtnSel">France</span>
+                        {% endif %}
+                    </button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        {% if page.region == 'au' %}
+                         <li>
+                            <a href="/fr" class="btn language set-cookie-fr"> 
+                                <img id="imgBtnIta" class="flag-fr img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">France</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/uk" class="btn language set-cookie-uk"> 
+                                <img id="imgBtnIta" class="flag-uk img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">United Kingdom</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if page.region == 'fr' %}
+                        <li>
+                            <a href="/au" class="btn language set-cookie-au"> 
+                                <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">Australia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/uk" class="btn language set-cookie-uk"> 
+                                <img id="imgBtnIta" class="flag-uk img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">United Kingdom</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if page.region == 'uk' %}
+                        <li>
+                            <a href="/au" class="btn language set-cookie-au"> 
+                                <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">Australia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/fr" class="btn language set-cookie-fr"> 
+                                <img id="imgBtnIta" class="flag-fr img-thumbnail icon-small">
+                                    &nbsp;&nbsp;
+                                <span id="lanBtnlIta">France</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        
+                    </ul>
+                </div>
             </ul>
             <!-- End Menu -->
         </div>      
@@ -108,6 +197,38 @@ ga('send', 'pageview');
 </nav>
 <!-- End Navigation
 ================================================== -->
+
+
+        <div id="regionSelectModal" class="modal fade in">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Select Your Region</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-sm-4 d-flex">
+                            <a class="set-cookie-au flex-fill d-flex text-center flex-column" href="/au">
+                                <span class="flag-au flex-fill ml-auto mr-auto" style="padding: 30%"></span>
+                                <span>Australia</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 d-flex">
+                            <a class="set-cookie-uk flex-fill d-flex text-center flex-column" href="/uk">
+                                <span class="flag-uk flex-fill ml-auto mr-auto" style="padding: 30%"></span>
+                                <span>U.K.</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 d-flex">
+                            <a class="set-cookie-fr flex-fill d-flex text-center flex-column" href="/fr">
+                                <span class="flag-fr flex-fill ml-auto mr-auto" style="padding: 30%"></span>
+                                <span>France</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
     
         <div class="site-content">   
                       

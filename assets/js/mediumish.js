@@ -1,5 +1,25 @@
 jQuery(document).ready(function($){
 
+    //if cookie hasn't been set display the region select...
+    if (document.cookie.indexOf("RegionSelected")<0) {
+        $("#regionSelectModal").modal("show");
+        //Modal has been shown, now set a cookie so it never comes back
+        $("#regionSelectModalClose").click(function () {
+            $("#regionSelectModal").modal("hide");
+        });
+    }
+
+    $('.set-cookie-au').bind('click', function() {
+      document.cookie = "RegionSelected=au; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    }); 
+
+    $('.set-cookie-fr').bind('click', function() {
+      document.cookie = "RegionSelected=fr; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    }); 
+
+    $('.set-cookie-uk').bind('click', function() {
+      document.cookie = "RegionSelected=uk; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    }); 
 
     // alertbar later
     $(document).scroll(function () {

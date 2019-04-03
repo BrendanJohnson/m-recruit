@@ -15,7 +15,7 @@ permalink: /:title/
 authors:
   sal:
     name: Sal
-    display_name: Stacey
+    display_name: Brendan
     gravatar: e1b5b1a3c2c391c4e47c6e542122802f
     email: brendangjohnson@gmail.com
     web: https://www.wowthemes.net
@@ -49,7 +49,7 @@ jekyll-archives:
 # Pagination 
 paginate: 6
 paginate_path: '/news/:num/'
-    
+
 # Other
 markdown: kramdown
 
