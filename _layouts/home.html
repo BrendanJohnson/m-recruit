@@ -1,0 +1,338 @@
+---
+layout: default
+---
+
+<script type="text/javascript">
+    window.RSS_FEED = 'https://storage.googleapis.com/fp-recruit-test/jobs/9s7vo-iiu99-b4w7s-5rxr4/rssfeed.xml?nocategories=true'
+</script>
+<div id="prefix_banner-container">
+    <div class="container-fluid">
+        <div class="row"> 
+            <!-- STRAPSLIDE -->
+            <div class="strapslide" id="strapslide">
+                <!-- PROGRESS BAR -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="progress progress-striped">
+                            <div class="progress-bar" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PROGRESS BAR -->  
+                <!-- PRELOADER -->
+                <div class="preloader text-center"> <img src="/media/abrs/images/loader.gif" alt="Loading.." id="loader" /> </div>
+                <!-- /PRELOADER --> 
+                <!-- STRAPSLIDE CONTAINER -->
+                <div class="strapslide-container"> 
+                    <!-- SLIDE -->
+                    {% for slide in page.slides %}
+                    <div class="slide active" data-animation="scaleup, fade" id="Slide{{index}}"> 
+                        <!-- SLIDE CONTENT -->
+                        <div class="slide-content container">
+                            <div class="row" data-top="10%" id="SlideText{{index}}">
+                                <div class="container"><div class="row"><div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-12 slide-text background-white">
+                                    <h2>{{slide.text}}</h2>
+                                 </div></div></div>
+                            </div>
+                        </div>
+                        <!-- /SLIDE CONTENT --> 
+                        <!-- BACKGROUND IMAGE --> 
+                        <img src="{{ slide.image }}" class="background-image" alt="" /> 
+                        <!-- /BACKGROUND IMAGE --> 
+                    </div>
+                    {% endfor %}
+                    <!-- /SLIDE -->        
+                </div>
+                <!-- /STRAPSLIDE CONTAINER -->  
+                <!-- PAGINATION -->
+                <div class="row strapslide-pagination hidden-sm hidden-xs">
+                    <div class="container"><div class="col-md-1 col-md-offset-12">
+                        <ul></ul>
+                    </div></div>
+                </div>
+                <!-- /PAGINATION --> 
+                
+            </div>
+            <!-- /STRAPSLIDE --> 
+            
+        </div>
+    </div>
+
+
+<link rel="stylesheet" href="/media/abrs/css/strapslide.css" />
+<!-- JavaScript plugins --> 
+<script src="/media/abrs/js/strapslide/jquery.touchSwipe.min.js"></script> 
+<script src="/media/abrs/js/strapslide/jquery.transit.min.js"></script> 
+<script src="/media/abrs/js/strapslide/jquery.mousewheel.js"></script> 
+<script src="/media/abrs/js/strapslide/jquery.fitVids.js"></script> 
+<!-- Slider plugin --> 
+<script src="/media/abrs/js/strapslide/strapslide.js"></script> 
+<script>
+$(document).ready(function() {
+    $('#strapslide').strapslide({
+        animation: "fade, top",
+        speed: 1000,
+        timeout: 5000,
+        responsive: 'resize',
+        autoplay: true,
+        preload: true,
+        pauseOnHover: true,
+        pagination: true,
+        mousewheel: false,
+        keyboard: true,
+        touchscreen: true
+    }, function() {
+        if ($('#strapslide .active').attr('id') == 'Slide1') {
+            $('#SlideText1').fxenter('fade, scaleup', 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide2') {
+            $('#SlideText2').fxenter('fade, rotatecw, scaledown', 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide3') {
+            $('#SlideText3').fxenter('fade, rotatecw, scaledown', 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide4') {
+            $('#SlideText4').fxenter('fade, scaleup, rotateccw', 1000);
+        }
+    }, function() {
+        if ($('#strapslide .active').attr('id') == 'Slide1') {
+            $('#SlideText1').fxexit("fade, scaleup", 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide2') {
+            $('#SlideText2').fxexit('fade, scaledown', 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide3') {
+            $('#SlideText3').fxexit('fade, rotatecw', 500);
+        } else if ($('#strapslide .active').attr('id') == 'Slide4') {
+            $('#SlideText4').fxexit('fade', 500);
+        }
+    });
+})
+</script>   
+    
+</div>
+
+<div id="widget-search">
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-3 col-sm-6 form-group">
+        <input id="keywords1" type="text" class="form-textbox form-control" placeholder="Keywords search">
+    </div>
+    <div class="col-md-3 col-sm-6 form-group custom-select">
+        <span>
+            <select class='form-dropdown' id="ja-professions">
+                <option value="-1" selected>- All Classifications -</option>
+                <option value="5820">Accounting</option>
+                <option value="5821">Administration</option>
+                <option value="5823">Aged Care</option>
+                <option value="5830">Community</option>
+                <option value="5834">Disabilities</option>
+                <option value="5835">Education & Training</option>
+                <option value="5837">Executive</option>
+                <option value="5840_5849">Health</option>
+                <option value="5842">HR & Recruitment</option>
+                <option value="5843">IT</option>
+                <option value="5845">Legal</option>
+                <option value="5848_5858_5862">Marketing</option>
+                <option value="5849">Mental Health</option>
+                <option value="5855">Records, Information and Archives</option>
+                <option value="5871">Social Care</option>
+            </select>
+        </span>
+    </div>
+    <div class="col-md-3 col-sm-6 form-group custom-select">
+        <span>
+            <div id='divLocation1'>
+                <select class='form-dropdown' id="ja-locations">
+                    <option value="-1" selected data-placeholdertag=''>- All Locations - </option>
+                        <optgroup label="AUSTRALIA">
+                            <option value="6633">Adelaide</option>
+                            <option value="6630">Brisbane</option>
+                            <option value="6636">Canberra</option>
+                            <option value="6635">Darwin</option>
+                            <option value="6631">Gold Coast</option>
+                            <option value="6634">Hobart</option>
+                            <option value="6629">Melbourne</option>
+                            <option value="6632">Perth</option>
+                            <option value="6637">Regional NSW</option>
+                            <option value="6638">Regional VIC</option>
+                            <option value="6639">Regional QLD</option>
+                            <option value="6640">Regional WA</option>
+                            <option value="6641">Regional SA</option>
+                            <option value="6642">Regional TAS</option>
+                            <option value="6643">Regional ACT</option>
+                            <option value="6644">Regional NT</option>
+                            <option value="6628">Sydney</option>
+                            <option value="6645">Other</option>
+                </optgroup></select>
+            </div>
+</span></div>
+    <div class="col-md-3 col-sm-6 form-group">
+        <a class="btn btn-primary btn-lg btn-block" id="btn-widget-search">search job </a></div>
+</div><input id='hfCountryCount' type='hidden' value='1' />
+
+</div>
+</div>
+<div id="prefix_home-container">
+    <section class="h-section section-intro">
+        <div class="container">
+            <div class="row h-qlinks">
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center editable">
+                    <a class="outline-outward" href="/submit-resume/" title="SUBMIT RESUME"><i class="r15-ico r15-envelope"><!-- --></i> </a><span>SUBMIT RESUME</span></div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center editable">
+                    <a class="outline-outward" href="/submit-a-vacancy/" title="JOB REQUEST"><i class="r15-ico r15-heart"><!-- --></i> </a><span>JOB REQUEST</span></div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center editable">
+                    <a class="outline-outward" href="#" title="JOB ALERT" data-toggle="modal" data-target="#createAlertModal"><i class="r15-ico r15-bell"><!-- --></i> </a><span>CREATE JOB ALERT</span></div>
+            </div>
+        </div>
+
+        <!-- Create Alert Modal -->
+        <script type="text/javascript">
+            function isValidEmailAddress(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+            function getEmailAddress() {
+                return document.getElementById("create-alert-email").value
+            }
+
+            function onEmailChanged() {
+                var submitButton = document.getElementById("submit-alert-button")
+                var emailAddress = getEmailAddress()
+                
+                if (isValidEmailAddress(emailAddress)) {
+                    submitButton.classList.remove("invalid-email")
+                    submitButton.removeAttribute("disabled")
+                }
+                else {
+                    submitButton.classList.add("invalid-email")
+                    submitButton.setAttribute("disabled", "true")
+                }
+            }
+
+            function onCreateAlert() {
+                $('#createAlertModal').modal('hide')
+            }
+        </script>
+        <style>
+            .invalid-email {
+                background-color: gray !important;
+                border-color: gray !important;
+                color: white;
+            }
+        </style>
+        <div class="modal fade" id="createAlertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="font-weight: bold;" class="modal-title" id="exampleModalLabel">Create an Alert</h5>
+              </div>
+              <div class="modal-body">
+                <p>Set up your job alerts now, so we can notify you of our vacancies as soon as we’ve received them!</p>
+                <label style="margin-top: 20px;" class="form-label-left2">Keywords</label>
+                <input type="text" placeholder="Keywords" />
+                <label style="margin-top: 20px;" class="form-label-left2">Classifications</label>
+                <select class='form-dropdown' id="ja-professions">
+                    <option value="-1" selected>- All Classifications -</option>
+                    <option value="5820">Accounting</option>
+                    <option value="5821">Administration</option>
+                    <option value="5823">Aged Care</option>
+                    <option value="5830">Community</option>
+                    <option value="5834">Disabilities</option>
+                    <option value="5835">Education & Training</option>
+                    <option value="5837">Executive</option>
+                    <option value="5840_5849">Health</option>
+                    <option value="5842">HR & Recruitment</option>
+                    <option value="5843">IT</option>
+                    <option value="5845">Legal</option>
+                    <option value="5848_5858_5862">Marketing</option>
+                    <option value="5849">Mental Health</option>
+                    <option value="5855">Records, Information and Archives</option>
+                    <option value="5871">Social Care</option>
+                </select>
+                <label style="margin-top: 20px;" class="form-label-left2">Locations</label>
+                <select class='form-dropdown' id="ja-locations">
+                    <option value="-1" selected data-placeholdertag=''>- All Locations - </option>
+                        <optgroup label="AUSTRALIA">
+                            <option value="6633">Adelaide</option>
+                            <option value="6630">Brisbane</option>
+                            <option value="6636">Canberra</option>
+                            <option value="6635">Darwin</option>
+                            <option value="6631">Gold Coast</option>
+                            <option value="6634">Hobart</option>
+                            <option value="6629">Melbourne</option>
+                            <option value="6632">Perth</option>
+                            <option value="6637">Regional NSW</option>
+                            <option value="6638">Regional VIC</option>
+                            <option value="6639">Regional QLD</option>
+                            <option value="6640">Regional WA</option>
+                            <option value="6641">Regional SA</option>
+                            <option value="6642">Regional TAS</option>
+                            <option value="6643">Regional ACT</option>
+                            <option value="6644">Regional NT</option>
+                            <option value="6628">Sydney</option>
+                            <option value="6645">Other</option>
+                    </optgroup>
+                </select>
+                <label style="margin-top: 20px;" class="form-label-left2">Email *</label>
+                <input id="create-alert-email" onkeyup="onEmailChanged()" type="text" placeholder="Email Address" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="submit-alert-button" type="button" class="btn btn-primary invalid-email" onclick="onCreateAlert()" disabled>Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Create Alert Modal -->
+
+    </section>
+</div>
+<section class="h-section section-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 editable text-center">
+                <h2>OUR SECTORS</h2>
+                <div class="styled-desc">
+                    <p>Our recruitment consultants have years of experience candidates in placing candidates in IT jobs across the entire sector, in a range of roles including software development, management &amp; UX/UI</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row editable">
+                <figure class="col-md-3 col-sm-6 crsl-item">
+                    <a href="/page/clients/services/project-manager" title="Project Manager"><img src="/media/abrs/images/project-manager.jpg" alt="Service" class="wide-image" />
+                <figcaption>Project Manager</figcaption>
+                </a></figure>
+                            <figure class="col-md-3 col-sm-6 crsl-item"> <a href="/full-stack" title="Full Stack"><img src="/media/abrs/images/fullstack-dev.png" alt="Service" class="wide-image" />
+                                <figcaption>Full Stack Dev.</figcaption>
+                                </a></figure>
+                            <figure class="col-md-3 col-sm-6 crsl-item"> <a href="/ux-ui" title="UX/UI"><img src="/media/abrs/images/ux-designer.jpg" alt="Service" class="wide-image" />
+                                <figcaption >UX/UI Designer</figcaption>
+                                </a></figure>
+                            <figure class="col-md-3 col-sm-6 crsl-item"> <a href="/dev-ops" title="DevOps Engineer"><img src="/media/abrs/images/devops.jpg" alt="Service" class="wide-image" />
+                                <figcaption >DevOps Engineer</figcaption>
+                                </a></figure>
+                        </div>
+        </div>
+        
+        
+        <div class="text-center"> <a href="/services" class="btn btn-primary" title="VIEW ALL SERVICES">VIEW ALL SERVICES</a> </div>
+    </div>
+</section>
+<section class="h-section section-jobfeed">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            
+                <div id="myJobsList">
+                    <ul>
+                        <!-- JS INSERT CONTENT HERE -->
+                    </ul>
+                </div>
+                
+            
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ contents }}

@@ -60,32 +60,40 @@ ga('send', 'pageview');
         <div class="collapse navbar-collapse" id="navbarMediumish">         
             <!-- Begin Menu -->
             <ul class="navbar-nav ml-auto">
-                {% if page.region == 'au' %}                   
-                    <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
+                {% for item in site.data.navigation %}
+                    <li {% if page.topmenu == 'home' %} class='nav-item active' {% else %} class='nav-item' {% endif %}>
+                         <a class='nav-link' href='/'> {{ item.label }}</a>
+                    </li>
+                {% endfor %}
+
+                {% if page.lang == 'au' %}                   
+                    <li {% if page.topmenu == 'home' %} class='nav-item active' {% else %} class='nav-item' {% endif %}>
                          <a class='nav-link' href='/'>Home</a>
                     </li>
-                    <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/about-us'>About Us</a>
+                    <li {% if page.topmenu == 'about-us'  %} class='nav-item active'{% else %} class='nav-item' {% endif %}>
+                        <a class='nav-link'
+                            href="/about">About Us</a>
                     </li>
-                    <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
+                    <li {% if page.topmenu == 'clients'  %} class='nav-item active'{% else %} class='nav-item' {% endif %}>
                         <a class='nav-link' href='/clients'>Clients</a>
                     </li>
-                    <li {% if page.topmenu == 'candidates'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                    <li {% if page.topmenu == 'candidates'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
                         <a class='nav-link' href='/submit-resume'>Candidates</a>
                     </li>
-                    <li {% if page.topmenu == 'contact'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                    <li {% if page.topmenu == 'contact'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
                         <a class='nav-link' href='/contact'>Contact</a>
                     </li>
-                    <li {% if page.topmenu == 'news'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
+                    <li {% if page.topmenu == 'news'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
                         <a class='nav-link' href='/news'>News</a>
                     </li>
                 {% endif %}
-                {% if page.region == 'fr' %}                   
+                {% if page.lang == 'fr' %}                   
                     <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
                          <a class='nav-link' href='/'>Accueil</a>
                     </li>
                     <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/about-us'>A propos</a>
+                        <a class='nav-link'
+                        href="{{ 'about' | prepend: site.baseurl }}">A propos</a>
                     </li>
                     <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
                         <a class='nav-link' href='/clients'>Entreprise</a>
@@ -100,7 +108,7 @@ ga('send', 'pageview');
                         <a class='nav-link' href='/news'>Actualités</a>
                     </li>
                 {% endif %}
-                {% if page.region == 'uk' %}                   
+                {% if site.lang == 'uk' %}                   
                     <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
                          <a class='nav-link' href='/'>Home</a>
                     </li>
@@ -122,15 +130,15 @@ ga('send', 'pageview');
                 {% endif %}
                 <div class="btn-group" style="margin-left: 20px">
                     <button class="btn btn-default language">
-                        {% if page.region == 'au' %}
+                        {% if page.lang == 'au' %}
                             <img class="flag-au img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">Australia</span>
                         {% endif %}
-                        {% if page.region == 'uk' %}
+                        {% if page.lang == 'uk' %}
                             <img class="flag-uk img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">United Kingdom</span>
                         {% endif %}
-                        {% if page.region == 'fr' %}
+                        {% if page.lang == 'fr' %}
                             <img class="flag-fr img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">France</span>
                         {% endif %}
@@ -139,7 +147,7 @@ ga('send', 'pageview');
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        {% if page.region == 'au' %}
+                        {% if page.lang == 'au' %}
                          <li>
                             <a href="/fr" class="btn language set-cookie-fr"> 
                                 <img id="imgBtnIta" class="flag-fr img-thumbnail icon-small">
@@ -155,23 +163,25 @@ ga('send', 'pageview');
                             </a>
                         </li>
                         {% endif %}
-                        {% if page.region == 'fr' %}
+                        {% if page.lang == 'fr' %}
                         <li>
-                            <a href="/au" class="btn language set-cookie-au"> 
+                            <a href="{{ site.baseurl | append: 'au' }}"
+                                class="btn language set-cookie-au"> 
                                 <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">
                                     &nbsp;&nbsp;
-                                <span id="lanBtnlIta">Australia</span>
+                                <span id="lanBtnlIta">oAustralia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/uk" class="btn language set-cookie-uk"> 
+                            <a href="{{ site.baseurl | append: 'uk' }}"
+                                class="btn language set-cookie-uk"> 
                                 <img id="imgBtnIta" class="flag-uk img-thumbnail icon-small">
                                     &nbsp;&nbsp;
                                 <span id="lanBtnlIta">United Kingdom</span>
                             </a>
                         </li>
                         {% endif %}
-                        {% if page.region == 'uk' %}
+                        {% if page.lang == 'uk' %}
                         <li>
                             <a href="/au" class="btn language set-cookie-au"> 
                                 <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">

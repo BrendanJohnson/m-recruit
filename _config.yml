@@ -10,6 +10,10 @@ disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
+languages: ["au", "en", "uk", "fr"]
+default_lang: "en"
+exclude_from_localization: ["assets", "forms", "lang-au", "lang-fr", "lang-uk", "news", "uploads", "vendor"]
+parallel_localization: false
 
 # Authors
 authors:
@@ -33,6 +37,7 @@ authors:
 # Plugins
 plugins: 
   - jekyll-paginate
+  - jekyll-polyglot
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
