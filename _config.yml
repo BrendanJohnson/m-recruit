@@ -12,7 +12,7 @@ include: ["_pages"]
 permalink: /:title/
 languages: ["global", "au", "uk", "fr"]
 default_lang: "global"
-exclude_from_localization: ["assets", "forms", "lang-au", "lang-fr", "lang-uk", "news", "uploads", "vendor"]
+exclude_from_localization: ["assets", "forms", "lang-au", "lang-fr", "lang-uk", "uploads", "vendor"]
 parallel_localization: false
 
 # Authors

@@ -67,15 +67,15 @@ ga('send', 'pageview');
                 {% endfor %}
                 <div class="btn-group" style="margin-left: 20px">
                     <button class="btn btn-default language">
-                        {% if page.lang == 'au' %}
+                        {% if site.active_lang == 'au' %}
                             <img class="flag-au img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">Australia</span>
                         {% endif %}
-                        {% if page.lang == 'uk' %}
+                        {% if site.active_lang == 'uk' %}
                             <img class="flag-uk img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">United Kingdom</span>
                         {% endif %}
-                        {% if page.lang == 'fr' %}
+                        {% if site.active_lang == 'fr' %}
                             <img class="flag-fr img-thumbnail icon-medium">&nbsp;&nbsp;
                             <span id="lanBtnSel">France</span>
                         {% endif %}
@@ -84,33 +84,33 @@ ga('send', 'pageview');
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        {% if page.lang == 'au' %}
+                        {% if site.active_lang == 'au' %}
                          <li>
-                            <a href="/fr" class="btn language set-cookie-fr"> 
+                            <a href=" /fr" class="btn language set-cookie-fr"> 
                                 <img id="imgBtnIta" class="flag-fr img-thumbnail icon-small">
                                     &nbsp;&nbsp;
                                 <span id="lanBtnlIta">France</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/uk" class="btn language set-cookie-uk"> 
+                            <a href=" /uk" class="btn language set-cookie-uk"> 
                                 <img id="imgBtnIta" class="flag-uk img-thumbnail icon-small">
                                     &nbsp;&nbsp;
                                 <span id="lanBtnlIta">United Kingdom</span>
                             </a>
                         </li>
                         {% endif %}
-                        {% if page.lang == 'fr' %}
+                        {% if site.active_lang == 'fr' %}
                         <li>
-                            <a href="{{ site.baseurl | append: 'au' }}"
+                            <a href=" /au"
                                 class="btn language set-cookie-au"> 
                                 <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">
                                     &nbsp;&nbsp;
-                                <span id="lanBtnlIta">oAustralia</span>
+                                <span id="lanBtnlIta">Australia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ site.baseurl | append: 'uk' }}"
+                            <a href=" /uk"
                                 class="btn language set-cookie-uk"> 
                                 <img id="imgBtnIta" class="flag-uk img-thumbnail icon-small">
                                     &nbsp;&nbsp;
@@ -118,16 +118,18 @@ ga('send', 'pageview');
                             </a>
                         </li>
                         {% endif %}
-                        {% if page.lang == 'uk' %}
+                        {% if site.active_lang == 'uk' %}
                         <li>
-                            <a href="/au" class="btn language set-cookie-au"> 
+                            <a href=" /au"
+                                class="btn language set-cookie-au"> 
                                 <img id="imgBtnIta" class="flag-au img-thumbnail icon-small">
                                     &nbsp;&nbsp;
                                 <span id="lanBtnlIta">Australia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/fr" class="btn language set-cookie-fr"> 
+                            <a href=" /fr"
+                                class="btn language set-cookie-fr"> 
                                 <img id="imgBtnIta" class="flag-fr img-thumbnail icon-small">
                                     &nbsp;&nbsp;
                                 <span id="lanBtnlIta">France</span>
