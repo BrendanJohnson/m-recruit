@@ -13,7 +13,7 @@ permalink: /:title/
 languages: ["global", "au", "uk", "fr"]
 default_lang: "global"
 exclude_from_localization: ["assets", "forms", "lang-au", "lang-fr", "lang-uk", "uploads", "vendor"]
-parallel_localization: true
+parallel_localization: false
 
 # Authors
 authors:
