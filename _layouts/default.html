@@ -61,73 +61,10 @@ ga('send', 'pageview');
             <!-- Begin Menu -->
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation %}
-                    <li {% if page.topmenu == 'home' %} class='nav-item active' {% else %} class='nav-item' {% endif %}>
-                         <a class='nav-link' href='/'> {{ item.label }}</a>
+                    <li {% if page.topmenu == item.name %} class='nav-item active' {% else %} class='nav-item' {% endif %}>
+                         <a class='nav-link' href='/{{site.active_lang}}/{{ item.name }}'>{{ item.label }}</a>
                     </li>
                 {% endfor %}
-
-                {% if page.lang == 'au' %}                   
-                    <li {% if page.topmenu == 'home' %} class='nav-item active' {% else %} class='nav-item' {% endif %}>
-                         <a class='nav-link' href='/'>Home</a>
-                    </li>
-                    <li {% if page.topmenu == 'about-us'  %} class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link'
-                            href="/about">About Us</a>
-                    </li>
-                    <li {% if page.topmenu == 'clients'  %} class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/clients'>Clients</a>
-                    </li>
-                    <li {% if page.topmenu == 'candidates'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/submit-resume'>Candidates</a>
-                    </li>
-                    <li {% if page.topmenu == 'contact'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/contact'>Contact</a>
-                    </li>
-                    <li {% if page.topmenu == 'news'  %} class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/news'>News</a>
-                    </li>
-                {% endif %}
-                {% if page.lang == 'fr' %}                   
-                    <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
-                         <a class='nav-link' href='/'>Accueil</a>
-                    </li>
-                    <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link'
-                        href="{{ 'about' | prepend: site.baseurl }}">A propos</a>
-                    </li>
-                    <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/clients'>Entreprise</a>
-                    </li>
-                    <li {% if page.topmenu == 'candidates'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/submit-resume'>Candidat</a>
-                    </li>
-                    <li {% if page.topmenu == 'contact'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/contact'>Contact</a>
-                    </li>
-                    <li {% if page.topmenu == 'news'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/news'>Actualités</a>
-                    </li>
-                {% endif %}
-                {% if site.lang == 'uk' %}                   
-                    <li {% if page.topmenu == 'home'  %}class='nav-item active' {% else %} class='nav-item' {% endif %}>
-                         <a class='nav-link' href='/'>Home</a>
-                    </li>
-                    <li {% if page.topmenu == 'about-us'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/about-us'>About Us (UK)</a>
-                    </li>
-                    <li {% if page.topmenu == 'clients'  %}class='nav-item active'{% else %} class='nav-item' {% endif %}>
-                        <a class='nav-link' href='/clients'>Clients</a>
-                    </li>
-                    <li {% if page.topmenu == 'candidates'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/submit-resume'>Candidates</a>
-                    </li>
-                    <li {% if page.topmenu == 'contact'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/contact'>Contact</a>
-                    </li>
-                    <li {% if page.topmenu == 'news'  %}class='nav-item active'{% else %} class='nav-item'{% endif %}>
-                        <a class='nav-link' href='/news'>News</a>
-                    </li>
-                {% endif %}
                 <div class="btn-group" style="margin-left: 20px">
                     <button class="btn btn-default language">
                         {% if page.lang == 'au' %}

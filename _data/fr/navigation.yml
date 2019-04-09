@@ -1,2 +1,12 @@
-- name: About
-  label: A Propos
+- name: home
+  label: Acceuil
+- name: about
+  label: A propos
+- name: clients
+  label: Entreprise
+- name: submit-resume
+  label: Candidats
+- name: contact
+  label: Contact
+- name: news
+  label: Actualités

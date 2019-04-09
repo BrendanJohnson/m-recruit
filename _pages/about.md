@@ -1,8 +1,9 @@
 ---
 layout: default
 permalink: /about
-lang: au
+lang: en
 comments: true
+topmenu: about
 ---
 <div class="mainheading">
     <h1 class="sitetitle"></h1>
