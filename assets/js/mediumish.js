@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 
+    console.log('check cloudcannon cookie')
+    console.log('cc: ' + document.cookie.indexOf("_cloud_cannon_session"));
     //if cookie hasn't been set display the region select...
     if ((document.cookie.indexOf("RegionSelected")<0) && (document.cookie.indexOf("_cloud_cannon_session")<0)) {
         $("#regionSelectModal").modal("show");
