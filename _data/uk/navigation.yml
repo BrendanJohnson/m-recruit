@@ -1,2 +1,12 @@
+- name: Home
+  label: Home
 - name: About
   label: About
+- name: Clients
+  label: Clients
+- name: Candidates
+  label: Candidates
+- name: Contacts
+  label: Contacts
+- name: News
+  label: News
