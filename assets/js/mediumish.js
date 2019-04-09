@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
     //if cookie hasn't been set display the region select...
-    if (document.cookie.indexOf("RegionSelected")<0) {
+    if ((document.cookie.indexOf("RegionSelected")<0) && (document.cookie.indexOf("_cloud_cannon_session")<0)) {
         $("#regionSelectModal").modal("show");
         //Modal has been shown, now set a cookie so it never comes back
         $("#regionSelectModalClose").click(function () {
