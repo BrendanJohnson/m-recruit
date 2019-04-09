@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /about
-lang: en
+lang: global
 comments: true
 topmenu: about
 ---

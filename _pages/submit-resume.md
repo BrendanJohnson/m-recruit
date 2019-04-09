@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /submit-resume
-lang: en
+lang: global
 topmenu: candidates
 ---
 <div class="mainheading">

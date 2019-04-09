@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  	<meta charset="utf-8">
+  	<title>Redirecting&hellip;</title>
+  	<link rel="canonical" href="/au/">
+  	<script>
+	  	function getCookie(cname) {
+		  var name = cname + "=";
+		  var ca = document.cookie.split(';');
+		  for(var i = 0; i < ca.length; i++) {
+		    var c = ca[i];
+		    while (c.charAt(0) == ' ') {
+		      c = c.substring(1);
+		    }
+		    if (c.indexOf(name) == 0) {
+		      return c.substring(name.length, c.length);
+		    }
+		  }
+		  return "";
+		}
+	  	var region = getCookie("RegionSelected");
+	  	if (region != "") {
+	    	location.href="/" + region + "/";
+	  	}
+	  	else {
+	    	location.href="/au/";
+	  	}
+	</script>
+  	<meta http-equiv="refresh" content="0; url=./au/">
+  	<meta name="robots" content="noindex">
+  	<h1>Redirecting&hellip;</h1>
+  	<a href="./au/">Click here if you are not redirected.</a>
+</html>
