@@ -1,14 +1,14 @@
 ---
-layout: post
 title: Movie Review
-author: john
+date: 2018-01-11 00:00:00 Z
 categories:
-  - Jekyll
-  - tutorial
+- Jekyll
+- tutorial
+layout: post
+author: john
 image: assets/images/11.jpg
-description: >-
-  My review of Inception movie. Acting, plot and something else in this short
-  description.
+description: My review of Inception movie. Acting, plot and something else in this
+  short description.
 featured: true
 hidden: true
 rating: 4.5
