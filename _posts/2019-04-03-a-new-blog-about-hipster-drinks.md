@@ -1,11 +1,10 @@
 ---
-title: A new blog about hipster drinks
-date: 2019-04-03 00:00:00 Z
-categories:
-- Jekyll
-- tutorial
 layout: post
+title: A new blog about hipster drinks
 author: sal
+categories:
+  - Jekyll
+  - tutorial
 image: assets/images/15.jpg
 ---
 

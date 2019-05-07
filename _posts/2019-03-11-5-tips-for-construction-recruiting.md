@@ -1,11 +1,10 @@
 ---
-title: 5 Tips for Construction Recruiting
-date: 2019-03-11 00:00:00 Z
-categories:
-- Jekyll
-- tutorial
 layout: post
+title: 5 Tips for Construction Recruiting
 author: sal
+categories:
+  - Jekyll
+  - tutorial
 image: assets/images/15.jpg
 ---
 
